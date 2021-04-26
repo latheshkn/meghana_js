@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Enter your name</label>
+        <input type="text" id="name" width="100%" height="100%" placeholder="Name"/>
+    </div>
+
+    <div>
+        <label>Select Department</label>
+        <select id="department" onchange="selectElements()">
+            <option value="">Select one</option>
+            <option value="CS">Computer Science</option>
+            <option value="IS">Informtion Science</option>
+            <option value="Mech">Mechanical</option>
+
+        </select>
+    </div>
+
+    <label>Result</label>
+    <p id="result"></p>
+</body>
+</html>
+
+<script>
+    const selectElements = ()=>{
+        const selectedItem=document.querySelector('#department');
+        const userName=document.querySelector('#name').value;
+        const value_select= selectedItem.value;
+        const result = document.querySelector("#result").innerHTML=`User Name is ${userName} and Department is ${value_select}` ;
+        
+        
+        
+
+    }
+
+
+</script>

@@ -1,0 +1,46 @@
+.red{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid red; 
+    background-color: red;
+}
+
+.cyan{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    color: cyan;
+    border: 1px solid cyan; 
+    background-color: cyan; 
+}
+
+.violet{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid violet;  
+    background-color: violet;
+}
+
+.orange{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid orange;  
+    background-color: orange;
+}
+.pink{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid orange;  
+
+    background-color: pink;
+}
+
+.center{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <label>Do you want to know my name</label>
+    <p id="set_name"></p>
+    <button id="click_button">Click Here</button>
+
+</div>
+<div>
+    <label>Stop it when it is 5</label>
+    <p id="stop_name"></p>
+
+    <button id="click_start">Click to start </button>
+    <button id="click_stop">Click to Stop </button>
+
+</div>
+
+    
+</body>
+</html>
+
+<script>
+const button = document.querySelector("#click_button");
+const setName=document.querySelector("#set_name");
+const setTime=()=>{
+    setName.innerHTML="Loading..."
+    setTimeout(()=>{
+        setName.innerHTML="Meghana"
+    },1000)
+}
+button.addEventListener('click',setTime);
+
+
+const start_button=document.querySelector("#click_start");
+const stop_button=document.querySelector("#click_stop");
+const setNameAfterStop=document.querySelector("#stop_name");
+let numberIncrement=0;
+let timeRef;
+
+
+const setStopTime=()=>{
+    setNameAfterStop.innerHTML="Loading";
+   timeRef= setInterval(()=>{
+        setNameAfterStop.innerHTML=`${numberIncrement}`;
+        numberIncrement++;
+    },1000)
+}
+
+
+let stopTimer = ()=>{
+    clearInterval(timeRef);
+}
+
+start_button.addEventListener('click',setStopTime)
+stop_button.addEventListener('click',stopTimer)
+
+
+</script>

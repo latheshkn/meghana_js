@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para2">The forPage method returns a new collection containing the items that would be present on a given page number. The method accepts the page number 
+        as its first argument and the number of items to show per page as its second argument:</p>
+
+
+
+    <p id="para", onmousedown="onMouseDown()" onmouseup="onMouseUp()">The forPage method returns a new collection containing the items that would be present on a given page number. The method accepts the page number 
+        as its first argument and the number of items to show per page as its second argument:</p>
+</body>
+</html>
+
+<script>
+    
+function onmousedown(){
+    const para= document.getElementById("para");
+  para.addEventListener('mouseenter',()=>{
+      para.style.color="red";
+  })
+        
+}
+
+function onMouseUp(){
+    document.getElementById("para").style.color="yellow";
+}
+
+const para= document.getElementById("para2");
+  para.addEventListener('mouseenter',()=>{
+      para.style.color="yellow";
+      console.log("red color");
+  })
+      
+</script>

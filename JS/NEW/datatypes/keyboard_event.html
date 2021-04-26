@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Keyboard event when user types on the keyboard</h1>
+
+    <input type="text" class="input-field" onkeypress="onKeyPress()" onkeydown="onKeyDown()"
+    onkeyup="onKeyUp()" width="50%" height="50%" placeholder="Keyboard event here"/>
+<p id="keys"></p>
+</body>
+</html>
+
+<script>
+
+    function onKeyPress(){
+        document.getElementById('keys').innerHTML = 
+        `your key event press ${event.key} and code is ${event.code}`
+    }
+
+    function onKeyDown(){
+        document.getElementById('keys').innerHTML = 
+        `Key is down`
+    }
+
+    function onKeyUp(){
+        document.getElementById('keys').innerHTML = 
+        `key is up`
+    }
+
+
+</script>
